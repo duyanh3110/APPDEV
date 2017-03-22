@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
                 return -1;
         }	*/ 
       	while(1){
-		ret = system("arecord -r16000 -c1 -d1 -f S16_LE -q data.wav");
+		ret = system("arecord -r16000 -c1 -d1 -f -q S16_LE data.wav");
 		if(WIFSIGNALED(ret) && WTERMSIG(ret) == SIGINT) break;
 		clearScreen();	// make a fresh screen
 		fp = fopen("data.wav", "r");
@@ -30,8 +30,12 @@ int main(int argc, char *argv[]){
 		dispWAVdata(sa);
 		fclose(fp);			// close the opened file
 	}
-        printf("Do you want to generate a testtone?(1:yes,0:no) ");
-        scanf("%d",&ans);
-        if(ans == 1) testTone(1000, 5);
+//	fread(&h, sizeof(h), 1, fp);	// read the wav header
+//	dispWAVHDR(h);	// display the wav header info
+//	fclose(fp);	// close the opened file
+//	printf("Do you want to generate a testtone?(1:yes,0:no) ");
+//	scanf("%d", &ans);
+//	if (ans == 1) testTone(1000, 5);
+	testTone(1000,5);
 }
 
