@@ -24,6 +24,4 @@ First you have to set USB sound card as default audio device......
 
 Second you need to downgrade the alsa-utils from 1.0.28 to 1.0.25. To do so,.....
 
-1.2 Software configuration
-
 
