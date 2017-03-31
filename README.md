@@ -1,5 +1,3 @@
-# this is version 1 of git example..
-
 ------------------------------------------
 	Aucostic Sensor using RPi3
 ------------------------------------------
