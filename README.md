@@ -10,7 +10,6 @@ Table of Content
 5. Contact information
 6. Credit and acknowledgments
 
-
 1. Configuration Instructions
 
 This project is built in a Rasberry Pi3, with a USB sound card and a microphone.
