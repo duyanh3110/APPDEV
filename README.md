@@ -1,5 +1,6 @@
+https://github.com/duyanh3110/APPDEV
 ------------------------------------------
-	Aucostic Sensor using RPi3
+Aucostic Sensor using RPi3
 ------------------------------------------
 
 Table of Content
